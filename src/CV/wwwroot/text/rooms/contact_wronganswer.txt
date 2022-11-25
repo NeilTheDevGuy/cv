@@ -1,0 +1,3 @@
+﻿Clippy frowns. "It looks like you might be not as smart as I first thought. That is the wrong answer."
+
+If you want to give up, just enter GIVE UP

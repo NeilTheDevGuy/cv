@@ -1,0 +1,23 @@
+﻿I am currently working at Global Relay as a Senior Software Engineer. I joined here in October 2022.
+
+Global Relay is an industry-leader in the compliance world - ingesting and archiving terabytes of data per day so our clients can maintain their compliance obligations.
+
+I work in the Identity and Access Management (IAM) team working on solutions to connect into new sources of data (e.g. Sharepoint, Yammer, Reddit, Facebook etc) and manage the authentication and authorization required, as well as the provisioning of new customers into the system.
+
+Global Relay has a large engineering organisation spread mainly between London and Vancouver. I joined the London team as the first .Net engineer (the rest being mainly Java), to help start a new London-based team to take some of the workload from a Vancouver-based team.
+The team has now grown and consists of multiple engineers and SDETs.
+
+Security of data is incredibly important at Global Relay and is at the heart of everything we do.
+
+Technology-wise, the stack mainly consists of the following:
+
+C# (Core and Framework)
+SQL Server
+Aerospike
+Kafka
+Thrift
+Jenkins
+Prometheus
+Grafana
+
+Microservices are hosted in an Openshift Kubernetes instance, and other hosting done via IIS. These instances are all deployed into a replicated multi-centre private cloud.

@@ -1,0 +1,29 @@
+﻿I worked at Travel Republic between January 2012 and January 2019
+I joined as a Senior Software Engineer, then Tech Team Lead.
+
+Travel Republic is a large OTA. As I joined it had just been taken over by dnata Travel (a large UAE-based travel agency), which is part of the larger dnata Group, itself part of the Emirates Airline group.
+
+I spent the majority of my time at Travel Republic as the Tech Team Lead of the dnata team. We were responsible for the versions of the website used by our parent company dnata Travel.
+These sites came in two flavours - a B2C site and a in-house site for use by in-store retail travel agents.
+
+I was part of the project to move the in-store agents to use the Travel Republic platform - this involved rebranding the site, and changing the checkout flows.
+
+I was then put in charge of the dataTravel B2C e-commerce site migration as tech team lead. This was a significant effort, involving items such as:
+
+Connection to the Sabre GDS system.
+Creation of a "marhaba" product line to sell the marhaba services available at DXB airport and elsewhere.
+Connection to the (undocumented) mid-office system for financial reporting.
+Changing to use the Emirates Corporate Payment Gateway for credit/debit card payments.
+
+I also played a large part in similar migrations of the Emirates Holidays systems into the Travel Republic platform.
+
+I was considered the SME on all things related to dnata at Travel Republic and built close relationships with stakeholders at dnata.
+
+The tech stack used was mainly:
+
+C# (mostly Framework)
+ASP.NET
+SQL Server
+Rabbit MQ
+Redis
+Octopus / Team City

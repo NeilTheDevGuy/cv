@@ -1,0 +1,5 @@
+﻿There is a door behind you, marked Lobby.
+
+In front of you is a raised dais, with the business card on it.
+
+Maybe you should look at the card?

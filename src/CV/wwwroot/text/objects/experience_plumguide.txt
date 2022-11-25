@@ -1,0 +1,35 @@
+﻿I worked at Plum Guide between July 2019 and October 2022.
+I started as a Senior Software Engineer, becoming a Tech Team Lead.
+
+Plum Guide is essentially a high-end alternative to Airbnb. Properties are checked and vetted prior to listing, and only those of sufficient quality are allowed on the platform.
+Plum Guide was a start-up/scale-up when I joined.
+
+I made significant contributions to projects such as the following:
+
+Price Sync - Synchronising our pricing with other platforms.
+Destinations - Creating a scaleable means of offering our services around the globe (rather than just a handful of cities).
+SEO - Created a catalog of destinations to automatically and scaleably generate sitemaps and landing/facet pages to drive SEO conversion.
+Messaging - Migrated guest-host messaging from a monolith into a new microservice, adding features such as attachment sending.
+Search - Designed and created the continuous ETL process to populate Elastic Search, as part of a search re-write. Also added monitoring and contributed significantly to the API.
+Syndication - Rewrote the syndication/affiliate feed engine to reduce reliance on engineering for changes to the feeds.
+Public API - Created a Public API for partner use. Also planned and designed a V2 of this with much improved functionality.
+
+I also managed a team of 3 other engineers, running the Integrations team. Our team looked after integrations into 3rd-party organisations (e.g. Property Management Systems).
+I looked after the backlog, managed weekly goal setting (in a Kanban-style), ran Agile ceremonies and the line-management of the 3 other engineers - carrying out 1-2-1s, goal-setting, performance reviews etc. 
+I was also very heavily involved in recruitment - doing interviews (phone screens, technical design interviews and culture interviews), and grading code test submissions.
+
+The tech stack at Plum Guide was mainly:
+
+C# (Core and Framework)
+ASP.NET
+SQL Server
+Redis
+Azure (Cosmos DB, Servicebus, Application Insights, Webjobs etc)
+Docker / Kubernetes (AKS)
+Bitbucket Pipelines / Octopus / TeamCity
+Infrastructure as Code (Pulumi)
+Elastic Search
+Prometheus
+Grafana
+Seq
+Salesforce

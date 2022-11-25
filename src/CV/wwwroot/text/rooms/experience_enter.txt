@@ -1,0 +1,10 @@
+﻿There are multiple screens on each wall, each with a heading above it. 
+From left-to-right they read as follows:
+
+GLOBAL RELAY
+PLUM GUIDE
+VIVID TRAVEL
+TRAVEL REPUBLIC
+CYBIT
+
+Each screen has writing on it. Maybe you should look at them?

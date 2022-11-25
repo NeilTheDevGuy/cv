@@ -1,0 +1,17 @@
+﻿I worked at Vivid Travel between January 2019 and July 2019 as a Senior Software Engineer.
+
+Vivid Travel was a small, bespoke tour operator started by the ex-CEO and ex-CTO of Travel Republic. I was asked by the CTO to join them to help them grow.
+Unfortunately, the business did not prove particularly viable and was shut down.
+
+During my time here I worked mainly on operational improvements to improve efficiencies in the over-stretched operations department. This included projects such as:
+
+Automating shipping label generation via Royal Mail.
+Automating app-generation with Vamoos.
+SMS/WhatsApp integration to replace an out-of-support Twilio component in Sharepoint.
+
+The tech stack at Vivid Travel was mainly:
+
+C# (Core)
+SQL Server
+Azure (App Services, Application Insights, Azure Devops)
+Salesforce

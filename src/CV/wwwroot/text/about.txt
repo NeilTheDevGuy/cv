@@ -1,0 +1,17 @@
+﻿I enjoyed playing text adventure games on the Commodore 64 as a kid, and later on with dialup MUD type games, and always fancied creating one.
+
+I've also always had a fascination with gamifying things that shouldn't really be games. 
+
+I once wanted a way to force updates on an Elastic Search index, so built an Arkanoid clone to represent the out-of-date data as bricks, which then triggered updates when destroyed.
+Yes, it was pointless, but it was fun and made for an interesting presentation, too.
+
+This game really came about when I was looking for a new job and thought this might help to give recruiters and hiring managers a change from a sea of boring CVs.
+
+It was also a way of playing a little bit with Blazor WebAssembly which I was interested in having a look at.
+
+As it turned out, I got a job far quicker than I expected, and therefore shelved this for a while. 
+
+Then I thought I might as well finish it anyway, rather than leaving it as a YAUT (Yet Another Unfinished Thing).
+
+
+For more detail on how the code and how it works, have a look at the Readme in Github repo at:

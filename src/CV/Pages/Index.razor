@@ -1,0 +1,136 @@
+﻿@page "/"
+@inject ITextDownloaderService _textDownloaderService;
+@inject ICommandParserService _commandParserService;
+@inject IStateService _stateService;
+@inject IServiceProvider _serviceProvider
+@inject IEnumerable<IRoom> _rooms;
+@inject HttpClient Http;
+@inject IJSRuntime JS
+
+<PageTitle>Neil Drinkall - CV Adventure Game</PageTitle>
+
+<h1></h1>
+
+<pre>@_text</pre>
+
+<div id = "commands">&gt;&nbsp;<input id = "commandsinput" @bind-value="_input" @bind-value:event="oninput" class="input-primary" @onkeyup="@CheckForEnter" /></div>
+
+@functions {
+
+        void ScrollToEnd()
+        {   
+            JS.InvokeVoidAsync("scrollToEnd");
+        }
+
+        void ShowPrompt() {
+            JS.InvokeVoidAsync("showCommandPrompt");
+        }
+
+        void HidePrompt() {
+            JS.InvokeVoidAsync("hideCommandPrompt");
+        }
+}
+
+@code {
+    private string _input = "";
+
+    private string _text = "";
+
+    private string _lastInput = "";
+    private const int _textDelay = 40;
+
+    private async Task CheckForEnter(KeyboardEventArgs e) {
+        if (e.Code == "Enter" || e.Code == "NumpadEnter")
+        {            
+
+            await ProcessText();
+        }
+    }
+
+    private async Task ProcessText()
+    {
+        _lastInput = _input;
+        _input = "";
+        StateHasChanged();
+
+        var inputText = $"{Environment.NewLine}{Environment.NewLine} : {_lastInput} {Environment.NewLine}{Environment.NewLine}";
+        _text = _text + inputText;
+
+        StateHasChanged();
+
+        var commandResponse = await _commandParserService.GetCommandResponse(_lastInput);
+
+        await AddTextImmediate(commandResponse.PreWriteStaticText);
+        await AddTextSlow(commandResponse.SlowText);
+        await AddTextImmediate(commandResponse.PostWriteStaticText);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {        
+        var lobby = _rooms.First(r => r.Room == Domain.Enums.Room.Lobby);
+        await _stateService.SetRoom(lobby);
+
+        var logoText = await _textDownloaderService.GetText("logo.txt");
+        await SetText(logoText);
+
+        var introText = await _textDownloaderService.GetText("intro.txt");
+        await AddTextSlow(introText);
+
+        var lobbyResponse = await lobby.Look();
+
+        await AddTextImmediate(lobbyResponse.PreWriteStaticText);
+        await AddTextSlow(lobbyResponse.SlowText);
+        await AddTextImmediate(lobbyResponse.PostWriteStaticText);
+    }
+
+    private async Task AddTextSlow(string? newText)
+    {
+        if (string.IsNullOrEmpty(newText))
+            return;
+
+        HidePrompt();
+        _text = _text + Environment.NewLine;
+
+        foreach (var nextChar in GetNextCharacter(newText))
+        {
+            _text = _text + nextChar;
+            StateHasChanged();
+            ScrollToEnd();
+            await Task.Delay(_textDelay);
+        }
+
+        ShowPrompt();
+        ScrollToEnd();
+    }
+
+    private static IEnumerable<string> GetNextCharacter(string text)
+    {
+        for (int i = 0; i <= text.Length -1; i++)
+        {
+            yield return text[i].ToString();
+        }
+    }
+
+    private async Task AddTextImmediate(string? newText) 
+    {
+        if (string.IsNullOrEmpty(newText))
+            return;
+        
+        _text = _text + Environment.NewLine + newText;        
+
+        StateHasChanged();
+        await Task.Delay(_textDelay); //Load-bearing delay to let the state change finish before it scrolls to the end
+        ScrollToEnd();
+    }
+
+    private async Task SetText(string text) 
+    {
+        HidePrompt();
+        
+        _text = text;
+        
+        StateHasChanged();        
+        ShowPrompt();        
+        ScrollToEnd();
+    }
+}

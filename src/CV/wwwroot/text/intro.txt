@@ -1,0 +1,9 @@
+﻿You wake up, unsure where you are.
+You shake your head and blink your eyes as they adjust to the gloom.
+You take a look around.
+
+It looks familiar, yet it is impossible. A closer look reveals that it is indeed true. 
+You are trapped in a CV, in the form of a text adventure game.
+
+A recollection of text-based games from your youth flashes into your memory. You know what to do...
+

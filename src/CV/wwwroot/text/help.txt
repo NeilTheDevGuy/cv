@@ -1,0 +1,23 @@
+﻿Text-based adventure games work on a simple series of rooms and commands.
+You start in the Lobby, and have access to other rooms, each containing more information.
+
+In this game, the commands are:
+
+LOOK - used to look at the room you are in.
+LOOK <object> - used to look at a specific object, e.g. LOOK PROFILE DOOR
+
+OPEN <door> - used to open a door and move inside that room, e.g. OPEN PROFILE
+
+ABOUT - details on the tech used to build the game.
+
+HELP - Shows this text.
+
+Note that commands are not case-sensitive.
+
+Sometimes you may encounter a character who will require you to answer a riddle before you are allowed in a room.
+(Nobody said you would have it easy!)
+In this instance, just type the answer when prompted.
+
+If you come across any issues (which is likely, this is put together very quickly) then please contact me at:
+gameissues@neildrinkall.com
+

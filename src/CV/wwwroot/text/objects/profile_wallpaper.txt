@@ -1,0 +1,22 @@
+﻿The wallpaper is written in what looks like Helvetica. It says the following:
+
+Neil Drinkall is an experienced backend software engineer and leader, with over 25 years experience.
+
+Neil has led or worked on many different projects, working at companies at the start-up/scale-up end of the spectrum, and in corporate environments.
+
+As such, Neil can write code, manage people, design systems, interact with stakeholders, manage projects and write silly games.
+
+Neil is extremely experienced in:
+
+C# (Framework / Core)
+Microservices
+SQL / NoSQL Databases
+Azure
+Docker / Kubernetes
+Scaleable and Distributed Systems
+
+Neil is married with 2 children and enjoys playing golf and playing the guitar. He is marginally less bad at the guitar than the golf.
+
+Neil is never sure if he should write about himself in the first or third person.
+
+For more detail, look in the WORK HISTORY room. To get in contact, look in the CONTACT room (but beware, you will have to pass a test...)
