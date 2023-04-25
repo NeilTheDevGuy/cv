@@ -48,13 +48,13 @@ public class WorkHistory : IRoom
             "Travel Republic", 
             await _textDownloaderService.GetText("objects/experience_travelrepublic.txt"), 
             ObjectTextType.Slow,
-            new List<string> { "Travel Republic", "TR", "Travel" }));
+            new List<string> { "Travel Republic", "TR" }));
 
         _objects.Add(new GeneralObject(
             "Vivid Travel",
             await _textDownloaderService.GetText("objects/experience_vividtravel.txt"),
             ObjectTextType.Slow,
-            new List<string> { "Vivid Travel", "Vivid " }));
+            new List<string> { "Vivid Travel", "Vivid" }));
 
         _objects.Add(new GeneralObject(
             "Cybit", 

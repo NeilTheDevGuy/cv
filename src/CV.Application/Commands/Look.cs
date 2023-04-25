@@ -28,18 +28,17 @@ public class Look : ICommand
             return await room.Look();
         }
 
+        var lookTarget = input.Split("look ")[1];
+
         //Could be a Door or an Object
         var lookableObjects = room.Objects.Union(room.Doors).ToList();
 
-        foreach (var word in components)
+        var matchingObject = lookableObjects.FirstOrDefault(r => r.LookableWords.Any(w => w.Equals(lookTarget, StringComparison.OrdinalIgnoreCase)));
+        if (matchingObject != null)
         {
-            var matchingObject = lookableObjects.FirstOrDefault(r => r.LookableWords.Any(w => w.Equals(word, StringComparison.OrdinalIgnoreCase)));
-            if (matchingObject != null)
-            {
-                return GetObjectLookResponse(matchingObject);
-            }
+            return GetObjectLookResponse(matchingObject);
         }
-
+        
         return new CommandResponse
         {
             SlowText = _noObject

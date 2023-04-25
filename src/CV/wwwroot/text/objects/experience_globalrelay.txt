@@ -5,7 +5,7 @@ Global Relay is an industry-leader in the compliance world - ingesting and archi
 I work in the Identity and Access Management (IAM) team working on solutions to connect into new sources of data (e.g. Sharepoint, Yammer, Reddit, Facebook etc) and manage the authentication and authorization required, as well as the provisioning of new customers into the system.
 
 Global Relay has a large engineering organisation spread mainly between London and Vancouver. I joined the London team as the first .Net engineer (the rest being mainly Java), to help start a new London-based team to take some of the workload from a Vancouver-based team.
-The team has now grown and consists of multiple engineers and SDETs.
+The team has now grown and consists of multiple engineers and SDETs. I also function as the Scrum Master for the team, so I lead and faciliate the regular ceremonies - daily stand ups, retrospectives, refinement sessions etc.
 
 Security of data is incredibly important at Global Relay and is at the heart of everything we do.
 
